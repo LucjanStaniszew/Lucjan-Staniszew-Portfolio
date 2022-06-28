@@ -1,0 +1,23 @@
+.app {
+    height: 100vh;
+
+    .sections {
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: lightsalmon;
+        position: relative;
+        top: 70px;
+        scroll-behavior: smooth; //hace que el rodamiento de pantalla sea suave
+        scroll-snap-type: y mandatory; // mandatory: mas proximo. basandose en eje y
+        scrollbar-width: none; //asi es para firefox
+        &::-webkit-scrollbar {
+            display: none; //aplica a todas los motores de internet. No se ve el scrollbar
+        }
+
+        > *{
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start; // cuando sueltas el scrollbar este se situa en el componente mas cercano
+        }
+    }
+}
