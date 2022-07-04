@@ -3,7 +3,7 @@
 .topbar {
     width: 100%;
     height: 70px;
-    background-color: crimson;
+    background-color: #15023a;
     color: $mainColor;
     position: fixed;
     top: 0;
@@ -31,15 +31,8 @@
         padding: 10px 30px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-
-
-        .left {
+        justify-content: space-evenly;
             
-            display: flex;
-            align-items: center;
-
-
             .logo {
                 font-size: 40px;
                 font-weight: 700;
@@ -63,68 +56,23 @@
                     text-decoration: none;
                 }
 
-                .download-cv {
+                .navs {
                     background-color: transparent;
+                    font-size: 22px;
                     color: white;
-                    font-size: 18px;
                     cursor: pointer;
                     border: none;
                    }
-                  
+
+                .navs:hover{
+                    color: green;
+                    cursor: pointer;
+                }
 
                 span{
                     font-size: 15px;
                     font-weight: 500;
                 }
-
             }
-        
-        }
-
-        .right {
-
-            .hamburguer {
-                width: 32px;
-                height: 25px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                cursor: pointer;
-                
-
-                span {
-                    width: 100%;
-                    height: 3px;
-                    background-color: white;
-                    transform-origin: left;
-                    transition: all 2s ease;
-                }
-            }
-        }
-    }
-    &.active{
-        background-color: $mainColor;
-        color: white;
-
-        .hamburguer{
-            overflow: hidden;
-            span{
-                overflow: hidden;
-                &:first-child{
-                    background-color: white;
-                    transform: rotate(45deg);
-                    overflow: hidden;
-                }
-                &:nth-child(2){
-                    opacity: 0;
-                    overflow: hidden;
-                }
-                &:last-child{
-                    background-color: white;
-                    transform: rotate(-45deg);
-                    overflow: hidden;
-                }
-            }
-        }
     }
 }

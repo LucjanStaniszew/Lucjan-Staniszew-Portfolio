@@ -1,11 +1,11 @@
 @import "../../global.scss";
 
 .works {
-    background-color: crimson;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 
     .arrow{
         height: 50px;
@@ -28,87 +28,48 @@
     }
 
     .slider {
-        height: 350px;
+        height: 80vh;
         display: flex;
         position: absolute;
         left: 0;
-        transition: all 1s ease-out;
-        
+        transition: all 1.5s ease-in-out;    
         
         .container {
             width: 100vw;
+            height: 80vh;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
 
-            .item {
-                width: 700px;
-                height: 100%;
-                background-color: #fff;
-                border-radius: 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+            h2{
+                font-size: 50px;
+                overflow: hidden;
+                margin-bottom: 10px;
             }
 
-            .left {
-                flex: 4;
-                height: 80%;
+            .title {
+                height: 10vh;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
-                .leftContainer{
-                    width: 90%;
-                    height: 70%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content:space-between;
-
-                    .imgContainer {
-                        width: 40px;
-                        height: 40px;
-                        border-radius: 50%;
-                        background-color: rgb(245,179,155);
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        img{
-                            width: 25px;
-                        }
-                    }
-
-                    h2{
-                        font-size: 20px;
-                    }
-
-                    p{
-                        font-size: 13px;
-                    }
-
-                    span {
-                        font-size: 12px;
-                        font-weight: 600;
-                        text-decoration: underline;
-                        cursor: pointer;
-                    }
-                }
             }
 
-            .right {
+            .img {
                 flex: 8;
-                height: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 overflow: hidden;
+                border-radius: 20px;
                 img {
                     width: 800px;
-                    transform: rotate(-10deg);
+                    border-radius: 20px;
                 }
+            }
+            .img:hover{
+                cursor: pointer;
             }
         }
     }
-
 }

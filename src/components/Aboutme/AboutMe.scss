@@ -1,4 +1,52 @@
-.testimonials {
-    background-color: lightcoral;
-    
+@import "../../global.scss";
+
+h1, h2, h3, h4 {
+    color: green;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+a:hover{
+    color: darkgreen;
+}
+
+.AboutMe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tech {
+    color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4, li{
+    font-size: 20px;
 }

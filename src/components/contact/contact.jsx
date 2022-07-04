@@ -42,7 +42,7 @@ const sendEmail = (e) => {
   e.preventDefault();
   setErrors(validate(empty))
 if (empty.user_mail && empty.user_subject){ 
-   emailjs.sendForm('service_j5bg2fa', 'template_fxxt0rn', form.current, 'user_No7Wk2Xmmcxmswl29wqsY')
+   emailjs.sendForm('service_pjvr3u4', 'template_xs5iwxj', form.current, 'NigNfmz7vgp94JZOH')
     .then((result) => {
         console.log(result.text);
         setSend(true)
@@ -64,7 +64,7 @@ if (empty.user_mail && empty.user_subject){
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="assets/acuerdo.png" alt="" />
+        <img src="assets/Mail2.png" alt="" />
       </div>
       <div className="right">{
         !send &&
@@ -80,9 +80,12 @@ if (empty.user_mail && empty.user_subject){
         </form>}
         { send &&
             <div className="overflow">
-            <span>  Gracias!!! Conversamos Pronto :) <img src="/assets/besos.png" alt="" height={350} width={350} /></span>
+            <h3 className="thanks">  Muchas gracias, pronto te responderé <img src="assets/Mail.png" alt="" height={350} width={350} /></h3>
             </div>
             }
+            <a download href="assets/EN Luciano Staniszewski.pdf">
+              <button class="download-cv">Download CV</button>
+            </a>
       </div>
     </div>
   );

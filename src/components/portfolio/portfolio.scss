@@ -1,7 +1,6 @@
 @import "../../global.scss";
 
 .portfolio {
-    background-color: #1f1f1f;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +49,7 @@
 
     
     .btn-btn{
-        background-color: crimson;
+        background-color: green;
         border: none;
         border-radius: 5px;
         margin: 3px;
@@ -62,7 +61,7 @@
     }
 
     .img-portfolio:hover{
-        transform: scale(1.1);
+        transform: scale(.9);
         transition: all 1s ease;
     }
     
@@ -90,7 +89,7 @@
             color: white;
             position: relative;
             transition: all 0.5s ease;
-            box-shadow: 3px 3px 3px 3px crimson;
+            box-shadow: 3px 3px 3px 3px green;
             cursor: pointer;
 
             
@@ -128,8 +127,8 @@
             }
             a{
                 text-decoration: none;
-                font-weight: bold;
-                color: white;
+                font-weight:700;
+                color: #15023a;
             }
         }
     }

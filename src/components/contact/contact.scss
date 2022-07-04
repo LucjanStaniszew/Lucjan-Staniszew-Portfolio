@@ -8,7 +8,7 @@ body{
       .swal-button {
         padding: 7px 19px;
         border-radius: 2px;
-        background-color: crimson;
+        background-color: rgb(6, 6, 58);
         font-size: 12px;
         border: none;
         text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
@@ -21,7 +21,7 @@ body{
       }
 }
 .contact {
-    background-color: white;
+    background-color: rgb(6, 6, 58);
     display: flex;
 
     @include mobile {
@@ -32,8 +32,7 @@ body{
     .left{
         flex: 1;
         overflow: hidden;
-        background-color: black;
-
+        background-color: rgb(6, 6, 58);
         img {
             height: 100%;
         }
@@ -50,10 +49,15 @@ body{
         h2 {
             font-size: 30px;
         }
+
+        input, textarea {
+            background-color: black;
+            /*color: white;*/
+        }
         
         .overflow{
             z-index: 999;
-            background-color: white;
+            color: green;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -74,6 +78,7 @@ body{
                 width: 300px;
                 height: 30px;
                 font-size: 14px;
+                color: green;
 
                 @include mobile{
                     width: 200px;
@@ -87,6 +92,7 @@ body{
                 width: 300px;
                 height: 200px;
                 font-size: 14px;
+                color: green;
 
                 @include mobile{
                     width: 200px;
@@ -98,25 +104,40 @@ body{
             .button {
                 width: 150px;
                 height: 30px;
-                color: whitesmoke;
-                background-color: crimson;
+                color: green;
+                font-weight: bolder;
+                background-color: black;
                 border: none;
                 border-radius: 10px;
             }
 
                 .button:hover{
                     cursor: pointer;
-                    background-color: black;
-                    color: crimson;
-                    transition: all 1s ease;
+                    background-color: green;
+                    color: rgb(6, 6, 58);
+                    transition: all 1s ease-in-out;
                 }
 
-                span {
+                .thanks {
                 color: green;
                 align-items: center;
                 overflow: hidden;
                 justify-content: center;
                 }
         }
+
+        .download-cv {
+            background-color: transparent;
+            font-size: 22px;
+            color: green;
+            cursor: pointer;
+            border: none;
+           }
+       .download-cv:hover{
+            background-color: black;
+            border-radius: 10px;
+            transition: all 1s ease-in-out;
+        }
+
     }
 }
