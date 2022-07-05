@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export default function Works() {
 
     const [currenteSlider, setCurrentSlider] = useState(0);
-    const [data, setData] = useState([])
+    const [data, setData] = useState([]);
 
 
     useEffect(()=>{
@@ -15,7 +15,7 @@ export default function Works() {
 
     const handleClick = (way) => {
       way === "left" 
-      ? setCurrentSlider(currenteSlider > 0 ? currenteSlider-1 : data.length -1) 
+      ? setCurrentSlider(currenteSlider > 0 ? currenteSlider-1 : data.length -1)
       : setCurrentSlider(currenteSlider < data.length - 1 ? currenteSlider +1 : 0)
     }
 
@@ -25,13 +25,14 @@ export default function Works() {
             style={{transform:`translateX(-${currenteSlider *100}vw)`}}>
                 {data.map((d) =>(
                 <div className="container">
-                    <h2>{d.title}</h2>
+                    <a href={d.web}>
+                      <h2>{d.title}</h2>
+                    </a>
                     <div className="item">
-                      <a href={d.web}>
+                      <h3 className="desc">{d.desc}</h3>
                         <div className="img">
                             <img src={d.img} alt="" />
                         </div>
-                      </a>
                     </div>
                    
                 </div>
