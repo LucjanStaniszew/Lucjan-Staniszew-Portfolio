@@ -21,7 +21,73 @@ export default function AboutMe() {
                     <div className="tech">
                 <ul>
                     <h3>Con las siguientes técnologias, frameworks y programas:
-                        <ul>
+                        <table border="1px solid">
+                            <tr>
+                                <th>
+                                    Front-End
+                                </th>
+                                <th>
+                                    Back-End
+                                </th>
+                                <th>
+                                    Bases de Datos
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    React
+                                </td>
+                                <td>
+                                    Node
+                                </td>
+                                <td rowSpan="2">
+                                    PostgreSQL
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Next
+                                </td>
+                                <td>
+                                    Sequelize
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Vue
+                                </td>
+                                <td>
+                                    Express
+                                </td>
+                                <td>
+                                    NoSQL
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Redux
+                                </td>
+                                <td>
+                                    Axios
+                                </td>
+                                <td>
+                                    MySQL
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    CSS
+                                </td>
+                                <td>
+                                    PostMan
+                                </td>
+                                <td>
+                                    MongoDB
+                                </td>
+                            </tr>
+
+                        </table>
+                        {/* <ul>
                             <div className="table">
                                 <div className="leftDown">
                                     <li>Front-End:
@@ -31,7 +97,6 @@ export default function AboutMe() {
                                             <li>Vue</li>
                                             <li>Redux</li>
                                             <li>CSS</li>
-                                            <li>Bootstrap</li>
                                         </ul>
                                     </li>
                                 </div>
@@ -59,7 +124,7 @@ export default function AboutMe() {
                                 </li>
                                 </div>
                             </div>
-                        </ul>    
+                        </ul>     */}
                     </h3>
                 </ul>
             </div>
