@@ -30,7 +30,7 @@ export default function intro() {
                 </div>
                 <div className="meContact">
                     <div className="itemContainer">
-                        <a href="https://wa.me/5491169962745" target="blank" ><WhatsApp className="icon"/></a>
+                        <a href="https://wa.me/5491133518159" target="blank" ><WhatsApp className="icon"/></a>
                     </div>
 
                     <div className="itemContainer">
