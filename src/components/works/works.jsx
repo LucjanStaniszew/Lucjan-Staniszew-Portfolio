@@ -29,10 +29,10 @@ export default function Works() {
                       <h2>{d.title}</h2>
                     </a>
                     <div className="item">
-                      <h3 className="desc">{d.desc}</h3>
                         <div className="img">
                             <img src={d.img} alt="" />
                         </div>
+                        <h3 className="desc">{d.desc}</h3>
                     </div>
                    
                 </div>

@@ -12,12 +12,22 @@
         position: absolute;
         cursor: pointer;
 
+        @include mobile{
+            height: 25px;
+        }
+
         &.left{
             left: 100px;
-            transform: rotateY(180deg); 
+            transform: rotateY(180deg);
+            @include mobile {
+                left: 10px;
+            }
         }
         &.right{
             right: 100px;
+            @include mobile{
+                right: 10px;
+            }
         }
     }
 
@@ -25,6 +35,11 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     h1{
@@ -40,43 +55,6 @@
         left: 0;
         transition: all 1.5s ease-in-out;
 
-        // .slider2 {
-        //     height: 50vh;
-        //     display: flex;
-        //     left: 0;
-        //     transition: all 1.5s ease-in-out;
-
-        //     .img{
-        //         flex: 8;
-        //         display: flex;
-        //         align-items: center;
-        //         justify-content: center;
-        //         overflow: hidden;
-        //         border-radius: 15px;
-        //         img{
-        //             width: 400px;
-        //             border-radius: 15px;
-        //         }
-        //     }
-
-        //     .arrow2{
-        //         color: green;
-        //         height: 30px;
-        //         position: absolute;
-        //         cursor: pointer;
-
-        //         &.left2{
-        //             left: 100px;
-        //             transform: rotateY(180deg);
-        //         }
-
-        //         &.right2{
-        //             right: 100px
-        //         }
-        //     }
-        // }
-
-        
         .container {
             width: 100vw;
             height: 80vh;
@@ -102,6 +80,12 @@
                 width: 20vw;
                 height: fit-content;
                 font-size: large;
+                margin-left: 20px;
+
+                @include mobile {
+                    width: fit-content;
+                    margin: 10px 10px 0 10px;
+                }
             }
 
             .img {
@@ -114,6 +98,9 @@
                 img {
                     width: 800px;
                     border-radius: 20px;
+                    @include mobile{
+                        width: 300px;
+                    }
                 }
                 img:hover{
                     cursor: auto;
