@@ -26,11 +26,15 @@ export default function intro() {
                 <div className="wrapper">
                     <h2>Hola, soy</h2>
                     <h1>Luciano Staniszewski</h1>
-                    <h3>Javascript Full Stack Developer <span ref={textRef} ></span></h3>
+                    <div className="titles">
+                        <h3>Javascript</h3>
+                        <h3>Full Stack Developer</h3>
+                        <h3><span ref={textRef} ></span></h3>
+                    </div>
                 </div>
                 <div className="meContact">
                     <div className="itemContainer">
-                        <a href="https://wa.me/5491169962745" target="blank" ><WhatsApp className="icon"/></a>
+                        <a href="https://wa.me/5491133518159" target="blank" ><WhatsApp className="icon"/></a>
                     </div>
 
                     <div className="itemContainer">
@@ -48,6 +52,7 @@ export default function intro() {
                     <div className="itemContainer">
                     <a download href="assets/EN Luciano Staniszewski.pdf">
                         <button class="download-cv">Download CV</button>
+                        <button class="download-cv2">CV</button>
                     </a>
                     </div>
                 </div>

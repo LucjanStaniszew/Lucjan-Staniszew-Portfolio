@@ -19,6 +19,16 @@ a:hover{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+
+    @include mobile{
+        flex-direction: column;
+    }
+}
+
+.rightUp{
+    @include mobile{
+        display: none;
+    }
 }
 
 .tech {
@@ -28,25 +38,33 @@ a:hover{
     align-items: center;
 }
 
-.table {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
 h1 {
     font-size: 50px;
+    display: flex;
+    justify-content: center;
+    @include mobile{
+        font-size: 40px;
+    }
 }
 
 h2 {
     font-size: 40px;
+    @include mobile{
+        font-size: 30px;
+    }
 }
 
 h3 {
     font-size: 30px;
+
+    @include mobile{
+        font-size: 20px;
+    }
 }
 
-h4, li{
+h4{
     font-size: 20px;
+    @include mobile{
+        font-size: 15px;
+    }
 }

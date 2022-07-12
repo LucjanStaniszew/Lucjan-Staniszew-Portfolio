@@ -69,9 +69,9 @@ if (empty.user_mail && empty.user_subject){
       <div className="right">{
         !send &&
       <form className='form' ref={form} onSubmit={sendEmail}>
-            <input className='name' placeholder="Nombre" name="user_name" value={empty.name} onChange={(e) => handleChange(e)} />
-            <input className='name' placeholder="N° Teléfono" name='user_phone' value={empty.phone} onChange={(e) => handleChange(e)}/>
-            <input className='name' placeholder="Email" name='user_mail' value={empty.mail} onChange={(e) => handleChange(e)}/>
+            <input type="text" className='name' placeholder="Nombre" name="user_name" value={empty.name} onChange={(e) => handleChange(e)} />
+            <input type="tel" className='name' placeholder="N° Teléfono" name='user_phone' value={empty.phone} onChange={(e) => handleChange(e)}/>
+            <input type="email" className='name' placeholder="Email" name='user_mail' value={empty.mail} onChange={(e) => handleChange(e)}/>
             {errors.user_mail && (errors.user_mail)}
             <input className='name' placeholder="Asunto" name='user_subject' value={empty.subject} onChange={(e) => handleChange(e)}/>
             {errors.user_subject && (errors.user_subject)}
