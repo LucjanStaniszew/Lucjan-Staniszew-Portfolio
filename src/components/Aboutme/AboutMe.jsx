@@ -8,7 +8,7 @@ export default function AboutMe() {
         <div className="AboutMe" id="aboutMe">
                 <div className="leftUp">
                     <h1 className="title">¡Hola visitante!</h1>
-                    <h2>Muchas gracias por haber llegado <br /> hasta este punto para conocerme más</h2>
+                    <h3>Muchas gracias por haber llegado <br /> hasta este punto para conocerme más</h3>
                     <h4>Me presento nuevamente y les cuento de mi:</h4>
                     <h4>Soy Luciano Stanizewski, tengo {getAge(birthDate)} años</h4>
                     <h4>Graduado en el bootcamp <a href="https://www.soyhenry.com/">soyHenry</a> como
@@ -21,7 +21,7 @@ export default function AboutMe() {
                     <div className="tech">
                 <ul>
                     <h3>Con las siguientes técnologias, frameworks y programas:
-                        <table border="1px solid">
+                        <table border="1px solid" className="tableCenter">
                             <tr>
                                 <th>
                                     Front-End
@@ -87,44 +87,6 @@ export default function AboutMe() {
                             </tr>
 
                         </table>
-                        {/* <ul>
-                            <div className="table">
-                                <div className="leftDown">
-                                    <li>Front-End:
-                                        <ul>
-                                            <li>React</li>
-                                            <li>Next</li>
-                                            <li>Vue</li>
-                                            <li>Redux</li>
-                                            <li>CSS</li>
-                                        </ul>
-                                    </li>
-                                </div>
-
-                                <div className="center">
-                                    <li>Back-End:
-                                        <ul>
-                                            <li>Node</li>
-                                            <li>Sequelize</li>
-                                            <li>Express</li>
-                                            <li>Axios</li>
-                                            <li>PostMan</li>
-                                        </ul>
-                                    </li>
-                                </div>
-
-                                <div className="rightDown">
-                                    <li>Databases:
-                                        <ul>
-                                            <li>PostreSQL</li>
-                                            <li>NoSQL</li>
-                                            <li>MySQL</li>
-                                            <li>MongoDB</li>
-                                        </ul>
-                                </li>
-                                </div>
-                            </div>
-                        </ul>     */}
                     </h3>
                 </ul>
             </div>
